@@ -1,0 +1,228 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: var(--Cream);
+    padding: 0;
+    margin: 0;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    height: auto;
+
+}
+
+.container-1 {
+    margin: 21.875% 0 21.875% auto;
+    padding: 0;
+    max-width: 18.75em;
+    height: 28.25em;
+}
+
+.container-1 .container-1-img {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+
+}
+
+.container-1 .container-1-img2 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 21.95% auto 21.95% 0;
+    max-width: 16.75em;
+    background-color: var(--White);
+    padding: 1.5625em;
+    height: auto;
+
+}
+
+.container-2 .perfume {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    letter-spacing: 0.3125em;
+    color: var(--Dark-grayish-blue);
+    margin: 0;
+
+}
+
+.container-2 .product-title {
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    font-size: 2.3125em;
+    color: var(--Very-dark-blue);
+    margin-top: 0.5em;
+    margin-bottom: 0.625em;
+}
+
+.container-2 .product-des {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--Dark-grayish-blue);
+}
+
+.container-2 .price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 5.625em;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.container-2 .price .current-price {
+    color: var(--Dark-cyan);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container-2 .price .canceled-price {
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--Dark-grayish-blue);
+}
+
+.container-2 .cart {
+    background-color: var(--Dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 2.5em;
+}
+
+.container-2 .cart:hover {
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+
+.container-2 .cart .cart-img {
+    margin-right: 0.3125rem;
+}
+
+.container-2 .cart .add-to-cart {
+    color: var(--White);
+    margin-left: 0.3125rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        position: relative;
+        bottom: 5px;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .container-1 {
+        display: flex;
+        max-width: 19.375em;
+        height: 15em;
+        margin: 27px auto 0 auto;
+
+
+    }
+
+    .container-1 .container-1-img2 {
+
+        width: 100%;
+        height: 240px;
+        padding: 0;
+
+
+
+    }
+
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 16.25em;
+        margin: 0 auto 27px auto;
+        height: 21.75em;
+        padding: 1.5625em;
+    }
+
+    .container-2 .price {
+        margin-top: 45px;
+        margin-bottom: 10px;
+    }
+
+    .container-2 .product-des {
+        margin-top: 23px;
+        font-size: 11px;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .container-2 .product-title {
+        margin-top: 5px;
+        font-size: 2em;
+        margin-bottom: 0;
+
+    }
+
+}
