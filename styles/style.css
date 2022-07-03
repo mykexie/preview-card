@@ -23,6 +23,7 @@ body {
     background-color: var(--Cream);
     padding: 0;
     margin: 0;
+    min-height: 100vh;
 
 }
 
@@ -40,14 +41,14 @@ a {
 .container {
     display: flex;
     margin: 0 auto;
-    position: relative;
     justify-content: center;
-    height: auto;
+    align-items: center;
+    min-height: 100vh;
+    padding-inline: 1rem;
 
 }
 
 .container-1 {
-    margin: 21.875% 0 21.875% auto;
     padding: 0;
     max-width: 18.75em;
     height: 28.25em;
@@ -71,11 +72,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 21.95% auto 21.95% 0;
     max-width: 16.75em;
     background-color: var(--White);
     padding: 1.5625em;
-    height: auto;
+    height: 25em;
 
 }
 
@@ -157,6 +157,7 @@ a {
 .container-2 .cart .add-to-cart {
     color: var(--White);
     margin-left: 0.3125rem;
+    font-size: 1.25em;
 }
 
 @media screen and (max-width: 500px) {
